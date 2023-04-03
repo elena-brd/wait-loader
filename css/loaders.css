@@ -1,0 +1,19 @@
+.loader {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.loader::after {
+    content: '\2026';
+    display: inline-block;
+    overflow: hidden;
+    animation: dots steps(4, end) 2s infinite;
+    vertical-align: bottom;
+    width: 0;
+}
+
+@keyframes dots {
+    to {
+        width: 50px;
+    }
+}
